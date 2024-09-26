@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random tf2 subredit posts</title>
+</head>
+<body onload="randomimg()">
+    <h1> NOTE - IT GET  RANDOM POSTS NOT RANDOM MEMES!!!</h1>
+    <img style="max-width: 800px; max-height: 600px;" id="img2">
+    <img style="max-width: 800px; max-height: 600px;" id="img3">
+    <img style="max-width: 800px; max-height: 600px;" id="img">
+    <button onclick="randomimgtf2m()">
+        new random r/tf2memes post
+    </button>
+
+    <button onclick="randomtf2s()">
+        new random r/tf2shitposterclub post
+    </button>
+
+   
+
+    <button onclick="randomtf2()">
+        new random r/tf2 post
+    </button>
+
+    <script>
+        function randomimgtf2m() {
+            let my_img = document.getElementById("img")
+            fetch("https://meme-api.com/gimme/tf2memes")
+            .then((response) => response.json())
+            .then((json) => json.url)
+            .then((json => {
+                my_img.src = json;
+        }))
+
+        
+        fetch("https://meme-api.com/gimme/tf2memes")
+            .then((response) => response.json())
+            .then((json) => json.author)
+            .then((json => {
+        }))
+
+        }
+
+
+
+
+        function randomtf2s() {
+            let my_img = document.getElementById("img2")
+            fetch("https://meme-api.com/gimme/tf2shitposterclub")
+            .then((response) => response.json())
+            .then((json) => json.url)
+            .then((json => {
+                my_img.src = json;
+        }))
+
+        
+        fetch("https://meme-api.com/gimme/tf2shitposterclub")
+            .then((response) => response.json())
+            .then((json) => json.author)
+            .then((json => {
+                
+        }))
+
+        }
+
+        
+        function randomtf2() {
+            let my_img = document.getElementById("img3")
+            fetch("https://meme-api.com/gimme/tf2")
+            .then((response) => response.json())
+            .then((json) => json.url)
+            .then((json => {
+                my_img.src = json;
+        }))
+
+        
+        fetch("https://meme-api.com/gimme/tf2")
+            .then((response) => response.json())
+            .then((json) => json.author)
+            .then((json => {
+        }))
+
+        }
+
+
+    </script>
+</body>
+</html>
