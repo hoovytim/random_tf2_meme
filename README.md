@@ -1,2 +1,2 @@
-# random_tf2_meme
-get a random post from r/tf2shitposterclub
+# random_tf2_post
+get a random post from tf2shitpostersclub, tf2 and tf2memes subreddit
